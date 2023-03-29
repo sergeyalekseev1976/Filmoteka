@@ -1,0 +1,145 @@
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 40;
+
+  margin-bottom: 5px;
+  font-size: 20px;
+
+  color: #eeeeee;
+}
+
+.is-hidden {
+  position: absolute;
+
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 9%;
+  right: 5%;
+  z-index: 50;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  font-size: 60px;
+
+  text-decoration: none;
+  color: #ffffffff;
+  background-color: var(--second-text-color);
+  border-radius: 50%;
+  opacity: 0.6;
+  box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.3);
+
+  cursor: pointer;
+
+  animation: pulsate-bck 2.5s ease-in-out infinite both;
+
+  transition: all 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    animation-play-state: paused;
+  }
+}
+
+@keyframes pulsate-bck {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 40;
+
+    margin-bottom: 5px;
+    font-size: 50px;
+
+    color: #eeeeee;
+  }
+
+  .is-hidden {
+    position: absolute;
+
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+
+    border: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .to-top {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 70px;
+    height: 70px;
+
+    font-size: 80px;
+
+    text-decoration: none;
+    color: #ffffffff;
+    background-color: var(--second-text-color);
+    border-radius: 50%;
+    opacity: 0.6;
+    box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+
+    animation: pulsate-bck 2.5s ease-in-out infinite both;
+
+    transition: all 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      animation-play-state: paused;
+    }
+  }
+
+  @keyframes pulsate-bck {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

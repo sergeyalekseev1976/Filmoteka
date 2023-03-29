@@ -1,0 +1,130 @@
+.backdrop-trailer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  overflow-y: auto;
+
+  background-color: var(--backdrop-bgc);
+
+  transition: opacity var(--animation), visibility var(--animation);
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.gallery {
+  display: none;
+  @media screen and(min-width:767px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    padding: 20px 10px;
+  }
+}
+
+.close-trailer-modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding: 8px;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  fill: currentColor;
+  color: var(--base-text-color);
+  transition: color 250ms cubic-bezier(0.39, 0.575, 0.565, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+@media screen and(max-width:767px) {
+  .modal-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 320px;
+    padding: 28px;
+
+    background: #e9e9e9;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px var(--backdrop-bgc);
+    border-radius: 10px;
+
+    transition: transform var(--animation);
+  }
+
+  .modal-video_link {
+    min-height: 199px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .modal-video_title {
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .close-trailer-modal-btn {
+    width: 20px;
+    height: 20px;
+  }
+
+  .close-trailer-modal-btn-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .modal-video {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    min-height: 900px;
+    padding: 32px 60px;
+    width: 568px;
+
+    background: var(--default-bgc);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px var(--backdrop-bgc);
+    border-radius: 10px;
+
+    transition: transform var(--animation);
+  }
+  .modal-video_title {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+
+    color: var(--base-text-color);
+    margin-bottom: 32px;
+  }
+
+  .modal-video_link {
+    min-width: 448px;
+    min-height: 205px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+}

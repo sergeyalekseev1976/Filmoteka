@@ -1,0 +1,52 @@
+.button-top {
+  display: none;
+  position: fixed;
+
+  @media screen and (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 40px;
+    height: 40px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+.button-top__icon {
+  cursor: pointer;
+  fill: red;
+  stroke: blue;
+  transition: opacity 250ms ease-in-out;
+  transform: translateY(0);
+  &:hover {
+    transform: scale(1.1);
+    fill: darkblue;
+    stroke: darkorange;
+  }
+  @media screen and (max-width: 767px) {
+    width: 20px;
+    height: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 30px;
+    height: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+.button-top__show {
+  display: flex;
+  justify-content: center;
+}
