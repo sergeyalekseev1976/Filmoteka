@@ -1,12 +1,12 @@
-import {
-  successfulAddToWatchedNotification,
-  successfulAddToQueueNotification,
-  isNotInWatchedNotification,
-  isNotInQueueNotification,
-  successfulDeleteFromWatchedNotification,
-  successfulDeleteFromQueueNotification,
-  errorNotification,
-} from './notifications';
+// import {
+//   successfulAddToWatchedNotification,
+//   successfulAddToQueueNotification,
+//   isNotInWatchedNotification,
+//   isNotInQueueNotification,
+//   successfulDeleteFromWatchedNotification,
+//   successfulDeleteFromQueueNotification,
+//   errorNotification,
+// } from './notifications';
 
 const addToWatchedBtn = document.querySelector('.js-add-to-watched-btn');
 const addToQueueBtn = document.querySelector('.js-add-to-queue-btn');
